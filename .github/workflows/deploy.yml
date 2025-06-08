@@ -1,0 +1,11 @@
+name: Deploy to server  #Definimos un nombre
+
+on: push #para hacer un evento "push" es el nombre del evento
+
+jobs: #Definimos un job
+  first_jobs: #Le damos un nombre
+    runs-on: ubuntu-latest #Definimos en que maquina esta corriendo 
+
+    steps:
+    - name: Hola mundo
+      run: echo "Hola mundo" #Es lo que va a ejecutar
