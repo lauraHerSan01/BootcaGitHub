@@ -11,7 +11,8 @@ jobs: #Definimos un job
       run: echo "Hola mundo segundo"  #Es lo que va a ejecutar
 
   second_jobs: 
-    if: false  #Indico si quiero o no que se ejeccute 
+    #sintaccion para usar un contexto ${{}}
+    if: ${{ github.ref == 'refs/heads/main'}}  #Indico si quiero o no que se ejeccute 
     needs: first_jobs
     runs-on: ubuntu-latest 
 
