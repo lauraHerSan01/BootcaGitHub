@@ -8,7 +8,7 @@ jobs: #Definimos un job
 
     steps: #Los steps se van a ejecutar en el sistema operativo que tu le indicaste al job
     - name: Hola mundo
-      run: echo "Hola mundo" #Es lo que va a ejecutar
+      run: cat hola.php #Es lo que va a ejecutar
 
   second_jobs: 
     needs: first_jobs
