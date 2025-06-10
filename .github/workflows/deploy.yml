@@ -8,9 +8,10 @@ jobs: #Definimos un job
 
     steps: #Los steps se van a ejecutar en el sistema operativo que tu le indicaste al job
     - name: Hola mundo
-      run: cat hola.php #Es lo que va a ejecutar
+      run: echo "Hola mundo segundo"  #Es lo que va a ejecutar
 
   second_jobs: 
+    if: false  #Indico si quiero o no que se ejeccute 
     needs: first_jobs
     runs-on: ubuntu-latest 
 
